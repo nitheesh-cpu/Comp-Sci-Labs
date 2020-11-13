@@ -1,0 +1,18 @@
+import java.util.*;
+import java.io.*;
+public class Multiplication {
+
+    public static void main(String[] args)throws IOException{
+        Scanner input = new Scanner(new File("Multiplication.txt"));
+        while(input.hasNext()){
+            int table = input.nextInt();
+            int length = input.nextInt();
+            int multiplication = 0;
+            System.out.println("multiplication table for " + table);
+            for(int i = 1; i <= length; i++){
+                multiplication = table * i;
+                System.out.println(i + "\t" + multiplication);
+            }
+        }
+    }
+}
